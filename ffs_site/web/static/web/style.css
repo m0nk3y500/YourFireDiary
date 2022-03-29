@@ -1,0 +1,6 @@
+.form-group {
+    padding-bottom:20px;  
+}
+.form-group label {
+    display: none;
+}

@@ -1,0 +1,13 @@
+{% extends 'web/base.html' %}
+{% load bootstrap4 %}
+
+{% block title%} FireFighterDiary - Account erstellen {%endblock%}
+
+{% block authForm%}
+<form action="" method="post">
+    {% csrf_token %}
+    {% bootstrap_form register_form %}
+    <button type="submit" class="btn btn-warning">Registrieren</button>
+</form>
+
+{% endblock%}

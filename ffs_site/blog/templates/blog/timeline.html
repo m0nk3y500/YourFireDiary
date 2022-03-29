@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+{% load bootstrap4 %}
+
+{% block blogContent %}
+
+    {% if request.user.is_authenticated %}
+        <form class="form-inline" action="{% url 'blog:add_content' %}" method="post">
+
+            {% csrf_token %}
+            {% bootstrap_form post_form layout='inline' %}
+
+            <button type="submit" class="btn btn-warning">Senden</button>
+
+        </form>
+    {% else %}
+    {% endif %}
+
+    {% for post in posts %}
+ 
+        <p>
+            {{ post.stichwort }} - {{ post.date }}
+            <br>
+            {{ post.content }}
+        </p>
+    {% empty %}
+
+        <p>Es sind keine Einträge vorhanden!</p>
+
+    {% endfor %}
+        
+{% endblock %}
