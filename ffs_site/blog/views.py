@@ -12,11 +12,15 @@ from django.contrib.auth.models import User
 def index(request):
     return render(request, 'blog/base.html')
 
-def timeline_view(request, username):
-    post_form = PostForm()
-    user = get_object_or_404(User, username=username)
+def dashboard_view(request):
+    # post_form = PostForm()
+    user = get_object_or_404(User, username=request.user.username)
     posts = FFDiary.objects.filter(user=user).order_by('-create_at')
-    return render(request, 'blog/timeline.html', {'posts':posts, 'post_form':post_form})
+    return render(request, 'blog/dashboard.html', {'posts':posts})
+
+def add_form_view(request):
+    post_form = PostForm()
+    return render(request, 'blog/add.html', {'post_form':post_form})
 
 @login_required
 @require_POST
@@ -27,4 +31,4 @@ def add_view(request):
         post.user = request.user
         post.time = datetime.today().strftime('%H')
         post.save()
-    return HttpResponseRedirect(reverse('blog:timeline', kwargs={'username': request.user.username}))
+    return HttpResponseRedirect(reverse('blog:dashboard', kwargs={'username': request.user.username}))

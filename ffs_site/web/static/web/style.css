@@ -1,6 +1,28 @@
-.form-group {
-    padding-bottom:20px;  
+html,body{
+    background-image: url('img/background_login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+    z-index: 1;
 }
+
+.form-group {
+    padding-bottom:30px;  
+}
+
 .form-group label {
     display: none;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.row {
+    margin-right: 0;
+    --bs-gutter-x: 0;
 }
