@@ -6,7 +6,23 @@ This small webapp was created using Django and Bootstrap.
 
 You can use it to write down your firefighting operations.
 
-If you want to run localy:
+## Example user
+
+You can test the interface. 
+Whether local or via the link in the description you can log in with a "muster" user.
+
+user:
+```
+muster
+```
+
+password:
+```
+123456
+```
+
+
+## instructions for running locally
 
 Clone the Resp from here:
 
