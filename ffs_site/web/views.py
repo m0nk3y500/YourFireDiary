@@ -26,7 +26,7 @@ def register_view(request):
 
 def login_view(request):
     if request.user.is_authenticated:
-        return redirect(reverse('blog:dashboard', kwargs={'username': request.user.username}))
+        return redirect(reverse('blog:dashboard'))
     login_form = loginForm()
     if request.method == 'POST':
         login_form = loginForm(request.POST)

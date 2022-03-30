@@ -31,4 +31,4 @@ def add_view(request):
         post.user = request.user
         post.time = datetime.today().strftime('%H')
         post.save()
-    return HttpResponseRedirect(reverse('blog:dashboard', kwargs={'username': request.user.username}))
+    return HttpResponseRedirect(reverse('blog:dashboard'))
