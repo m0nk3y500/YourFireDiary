@@ -19,9 +19,15 @@ cd YourFireDiary
 python -m venv venv
 ```
 
+To activate the virtual environments:
 ```
 . venv/bin/activate
 ```
+
+for deactivate:
+```
+deactivate
+
 
 ```
 pip install Django django-bootstrap4
