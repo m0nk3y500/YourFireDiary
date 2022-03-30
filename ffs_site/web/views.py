@@ -19,7 +19,7 @@ def register_view(request):
             if user is not None:
                 print(user)
                 login(request, user)
-                return redirect(reverse('blog:dashboard', kwargs={'username': request.user.username}))
+                return redirect(reverse('blog:dashboard'))
             else:
                 print('User not found')
     return render(request, 'web/register.html', {'register_form':register_form})

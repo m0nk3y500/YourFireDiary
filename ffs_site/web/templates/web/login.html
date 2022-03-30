@@ -12,3 +12,11 @@
 </form>
 
 {% endblock%}
+
+{% block regOrLog%}
+
+<div class="d-flex justify-content-center links text-light mt-3 mt-lg-0">
+    Noch kein Account? - <a class="text-light" href="{% url 'web:register' %}"> - Registrieren</a>
+</div>
+
+{% endblock%}
