@@ -27,6 +27,7 @@ To activate the virtual environments:
 for deactivate:
 ```
 deactivate
+```
 
 
 ```
