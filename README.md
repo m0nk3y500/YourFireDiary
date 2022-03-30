@@ -1,4 +1,5 @@
-# YourFireDiary
+## YourFireDiary
+# It is currently still under development. But the basic functions work.
 A little Django-Webapp for logging fire operations.
 
 This small webapp was created using Django and Bootstrap.
@@ -47,6 +48,3 @@ To run the env-server from django:
 ```
 python manage.py runserver
 ```
-
-
-## It is currently still under development. But the basic functions work.
