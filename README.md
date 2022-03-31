@@ -15,61 +15,41 @@ You can use it to write down your firefighting operations.
 You can test the interface. 
 Whether local or via the link in the description you can log in with a "muster" user.
 
-user:
-```
-muster
-```
+user: `muster`
 
-password:
-```
-123456
-```
+password:`123456`
 
 
 ## instructions for running locally
 
-Clone the Resp from here:
+Clone the Resp from here: `git clone https://github.com/m0nk3y500/YourFireDiary.git`
 
-```
-git clone https://github.com/m0nk3y500/YourFireDiary.git
-```
+Go into the workfolder: `cd YourFireDiary`
 
-Go into the workfolder:
-```
-cd YourFireDiary
-```
+Creation of virtual environments: `python -m venv venv`
 
-Creation of virtual environments:
-```
-python -m venv venv
-```
+To activate the virtual environments: `. venv/bin/activate`
 
-To activate the virtual environments:
-```
-. venv/bin/activate
-```
+for deactivate: `deactivate`
 
-for deactivate:
-```
-deactivate
-```
+Install some packeges with pip: `pip install Django django-bootstrap4`
 
-Install some packeges with pip:
-```
-pip install Django django-bootstrap4
+Go in file of site: `cd ffs_site`
+
+Open `settings.py` in editor or in terminal with `nano  settings.py`
+You still have to change the DB settings, in line 85, 86
+
+This is what it should look like after the change:
+```Python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+       # 'NAME': BASE_DIR / 'db_main.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 ```
 
-Go in file of site:
-```
-cd ffs_site
-```
+To run the env-server from django: `python manage.py runserver`
 
-To run the env-server from django:
-```
-python manage.py runserver
-```
-
-Now you can visit the site over: 
-```
-localhost:8000/web/login
-```
+Now you can visit the site over: `localhost:8000/web/login`
