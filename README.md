@@ -6,6 +6,10 @@ This small webapp was created using Django and Bootstrap.
 
 You can use it to write down your firefighting operations.
 
+<img width="1680" alt="Bildschirmfoto 2022-03-31 um 11 25 29" src="https://user-images.githubusercontent.com/61576500/161023382-775910bb-c62d-4cbc-a9ad-b4152eece673.png">
+
+<img width="1306" alt="Bildschirmfoto 2022-03-31 um 11 25 59" src="https://user-images.githubusercontent.com/61576500/161023507-7951f324-f2b4-4cea-a1cd-6ec7247bdd0c.png">
+
 ## Example user
 
 You can test the interface. 
