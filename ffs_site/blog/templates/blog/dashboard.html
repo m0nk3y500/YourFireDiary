@@ -1,15 +1,42 @@
 {% extends 'blog/base.html' %}
 {% load bootstrap4 %}
 
+{% block BlogMenu %}
+
+    <div class="row pt-3 justify-content-between">
+        <h1 class="col-4 col-lg-6">Dashboard</h1>
+        <div class="row menu pt-lg-2 col-8 col-lg-6 justify-content-end ">
+            <div class="link col-2 col-lg-1 pt-1 text-center">
+                <a href="{% url 'blog:add_form' %}"><span class="material-icons fs-1 text-success">add</span></a>
+            </div>
+            <div class="link col-2 col-lg-1 pt-1 text-center pe-5 pe-lg-0">
+                <a class="" href="{% url 'web:logout' %}"><span class="material-icons fs-1 text-danger">logout</span></a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
 {% block blogContent %}
 
     {% for post in posts %}
+
+        <div class="post col-lg-3 col-sm-4 col-md-8 mb-4">
+            <div class="card shadow">
+                <!-- <div class="card-header row m-0">
+                    <h3 class="mb-0 col-10">{{ post.stichwort }}</h3> <a class="col-2" href="#"><span class="material-icons">more_vert</span></a>
+                </div> -->
+                <div class="card-body row p-3">
+                    <h3 class="card-title mb-0 col-10">{{ post.stichwort }}</h3> <a class="col-2" href="#"><span class="material-icons">more_vert</span></a>
+                    <p>{{ post.date }} - {{post.time}}</p>
+                    <p class="text-truncate" style="text-overflow: ellipsis;">{{ post.content }}</p>
+                </div>
+                <!-- <div class="card-footer bg-white">
+                    <p>Hallo</p>
+                </div> -->
+            </div>
+        </div>
  
-        <p>
-            {{ post.stichwort }} - {{ post.date }}
-            <br>
-            {{ post.content }}
-        </p>
     {% empty %}
 
         <p>Es sind keine Einträge vorhanden!</p>

@@ -1,6 +1,18 @@
 {% extends 'blog/base.html' %}
 {% load bootstrap4 %}
 
+{% block BlogMenu %}
+
+    <div class="row pt-3">
+        <h1 class="col-8">Einsatz eintragen</h1>
+        <div class="row menu pt-lg-2 col-4  justify-content-end ">
+            <!-- <a class="col-2 pe-4 pt-1" href="{% url 'blog:dashboard' %}"><span class="material-icons fs-1 text-dark">arrow_back</span></a> -->
+            <a class="col-2 pe-4 pt-1" href="{% url 'web:logout' %}"><span class="material-icons fs-1 text-danger">logout</span></a>
+        </div>
+    </div>
+
+{% endblock %}
+
 {% block blogContent %}
 
     {% if request.user.is_authenticated %}
