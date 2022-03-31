@@ -64,3 +64,8 @@ To run the env-server from django:
 ```
 python manage.py runserver
 ```
+
+Now you can visit the site over: 
+```
+localhost:8000/web/login
+```
