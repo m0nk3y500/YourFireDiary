@@ -1,4 +1,3 @@
 venv/
 .vscode/
-ffs_site/db.sqlite3
-.DS_Stores
+*.DS_Stores
