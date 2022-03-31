@@ -3,6 +3,14 @@
 
 {% block title%} FireFighterDiary - Login {%endblock%}
 
+{% block LoginError %}
+
+    {% if not error == None %}
+        <p class="text-danger text-uppercase font-weight-bold">{{ error }}</p>
+    {% endif %}
+    
+{% endblock %}
+
 {% block authForm%}
 
 <form action="" method="post">

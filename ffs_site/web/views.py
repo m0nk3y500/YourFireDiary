@@ -1,6 +1,4 @@
-from csv import register_dialect
 from django.shortcuts import redirect, render
-# from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -25,6 +23,7 @@ def register_view(request):
     return render(request, 'web/register.html', {'register_form':register_form})
 
 def login_view(request):
+    error = None
     if request.user.is_authenticated:
         return redirect(reverse('blog:dashboard'))
     login_form = loginForm()
@@ -39,7 +38,8 @@ def login_view(request):
                 return redirect(reverse('blog:dashboard'))
             else:
                 print('User not found')
-    return render(request, 'web/login.html', {'login_form':login_form})
+                error = "Benutzer oder Passwort ist falsch"
+    return render(request, 'web/login.html', {'login_form':login_form, 'error':error})
 
 def logout_view(request):
     logout(request)
