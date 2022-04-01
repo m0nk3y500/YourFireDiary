@@ -5,11 +5,12 @@ class PostForm(forms.ModelForm):
 
     class Meta:
         model = FFDiary
-        fields = ['stichwort', 'date', 'content']
+        fields = ['stichwort', 'date', 'time', 'content']
         labels = {
-            'stichwort': 'Das Stichwort',
+            'stichwort': 'Stichwort',
             'date': 'Datum',
-            'content': 'Beschreibung'
+            'content': 'Beschreibung',
+            'time' : 'Uhrzeit'
         }
 
     

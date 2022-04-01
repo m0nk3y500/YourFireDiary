@@ -7,5 +7,5 @@ class FFDiary(models.Model):
     stichwort = models.CharField(max_length=20)
     create_at = models.DateTimeField(default=timezone.now)
     date = models.DateField(auto_now_add=False)
-    time = models.TimeField(auto_now_add=True)
+    time = models.TimeField(auto_now_add=False)
     content = models.CharField(max_length=200)

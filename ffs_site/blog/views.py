@@ -29,6 +29,5 @@ def add_view(request):
     if post_form.is_valid():
         post = post_form.save(commit=False)
         post.user = request.user
-        post.time = datetime.today().strftime('%H')
         post.save()
     return HttpResponseRedirect(reverse('blog:dashboard'))
