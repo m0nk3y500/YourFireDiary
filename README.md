@@ -6,6 +6,9 @@ This **small and easy** webapp was created using Django and Bootstrap.
 
 You can use it to write down your firefighting operations.
 
+_The interface is developed in German. Of course you can change the few words.<br>
+Maybe I'll bring out a combination again, where you can choose._
+
 
 <img width="720" alt="Bildschirmfoto 2022-04-01 um 10 09 34" src="https://user-images.githubusercontent.com/61576500/161223757-1a9eee06-8fd8-4000-99fa-a3406639248a.png">
 
