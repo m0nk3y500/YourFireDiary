@@ -2,13 +2,19 @@
 ### -- It is currently still under _development_. But the basic functions work. --
 A little Django-Webapp for logging fire operations.
 
-This small webapp was created using Django and Bootstrap.
+This **small and easy** webapp was created using Django and Bootstrap.
 
 You can use it to write down your firefighting operations.
 
-<img width="1680" alt="Bildschirmfoto 2022-03-31 um 11 25 29" src="https://user-images.githubusercontent.com/61576500/161023382-775910bb-c62d-4cbc-a9ad-b4152eece673.png">
 
-<img width="1306" alt="Bildschirmfoto 2022-03-31 um 11 25 59" src="https://user-images.githubusercontent.com/61576500/161023507-7951f324-f2b4-4cea-a1cd-6ec7247bdd0c.png">
+<img width="720" alt="Bildschirmfoto 2022-04-01 um 10 09 34" src="https://user-images.githubusercontent.com/61576500/161223757-1a9eee06-8fd8-4000-99fa-a3406639248a.png">
+
+
+<img width="1664" alt="Bildschirmfoto 2022-04-01 um 10 13 47" src="https://user-images.githubusercontent.com/61576500/161223835-8dd483ff-59fe-485d-acfa-ab69c3d0b4f5.png">
+
+
+<img width="1350" alt="Bildschirmfoto 2022-04-01 um 10 18 14" src="https://user-images.githubusercontent.com/61576500/161224098-461d01dc-fcd9-463c-803b-afa70cd95866.png">
+
 
 ## Example user
 
