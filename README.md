@@ -35,7 +35,7 @@ Clone the Resp from here: `git clone https://github.com/m0nk3y500/YourFireDiary.
 
 Go into the workfolder: `cd YourFireDiary`
 
-Creation of virtual environments: `python -m venv venv`
+Creation of virtual environments: `python3 -m venv venv`
 
 To activate the virtual environments: `. venv/bin/activate`
 
@@ -59,6 +59,6 @@ DATABASES = {
 }
 ```
 
-To run the env-server from django: `python manage.py runserver`
+To run the env-server from django: `python3 manage.py runserver`
 
 Now you can visit the site over: `localhost:8000/web/login`
