@@ -10,7 +10,7 @@ _The interface is developed in German. Of course you can change the few words.<b
 Maybe I'll bring out a combination again, where you can choose._
 
 
-<img width="720" alt="Bildschirmfoto 2022-04-01 um 10 09 34" src="https://user-images.githubusercontent.com/61576500/161223757-1a9eee06-8fd8-4000-99fa-a3406639248a.png">
+<img width="1660" alt="Bildschirmfoto 2022-04-01 um 10 09 34" src="https://user-images.githubusercontent.com/61576500/161223757-1a9eee06-8fd8-4000-99fa-a3406639248a.png">
 
 
 <img width="1664" alt="Bildschirmfoto 2022-04-01 um 10 13 47" src="https://user-images.githubusercontent.com/61576500/161223835-8dd483ff-59fe-485d-acfa-ab69c3d0b4f5.png">
